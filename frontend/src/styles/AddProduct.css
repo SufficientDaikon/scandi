@@ -1,0 +1,86 @@
+.add-product-container {
+    margin: 20px;
+    max-width: 600px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -15px;
+}
+
+.header-container h1 {
+    margin: 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.common-label {
+    width: 70px;
+}
+.switcher-label{
+    width: 115px;
+}
+input,
+select {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button[type="button"] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
+}
+
+.hint {
+    font-weight: bold;
+}
+.common {
+    width: 300px;
+}
+
+#productType {
+    width: 200px;
+}
+
+.attribute{
+    width: 200px;
+    margin-left: 10px;
+}
