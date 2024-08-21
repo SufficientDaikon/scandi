@@ -73,9 +73,7 @@ function AddProduct() {
             if (data.error) {
                 setError(data.error);
             } else {
-                    console.log("redirecting")
                     window.location.href = '/';
-                    console.log("redireced")
                 }
             })
             .catch(err => setError('An error occurred: ' + err.message));
@@ -103,7 +101,6 @@ function AddProduct() {
                         name="sku" 
                         value={formData.sku} 
                         onChange={handleChange} 
-                        onInvalid={handleTextValidation}
                         onInput={handleTextValidation}
                         required
                         />
@@ -118,7 +115,6 @@ function AddProduct() {
                         name="name" 
                         value={formData.name} 
                         onChange={handleChange}
-                        onInvalid={handleTextValidation}
                         onInput={handleTextValidation}
                         required
                         />
@@ -133,7 +129,6 @@ function AddProduct() {
                             name="price"
                             value={formData.price}
                             onChange={handleChange}
-                            onInvalid={handleNumberValidation}
                             onInput={handleNumberValidation}
                             required
                         />
@@ -160,7 +155,6 @@ function AddProduct() {
                             name="attribute" 
                             value={formData.attribute} 
                             onChange={handleChange} 
-                            onInvalid={handleNumberValidation}
                             onInput={handleNumberValidation}
                             required
                             />
@@ -180,7 +174,6 @@ function AddProduct() {
                             name="attribute" 
                             value={formData.attribute} 
                             onChange={handleChange} 
-                            onInvalid={handleNumberValidation}
                             onInput={handleNumberValidation}
                             required
                             />
@@ -200,7 +193,6 @@ function AddProduct() {
                                 name="height" 
                                 value={formData.height} 
                                 onChange={handleChange}
-                                onInvalid={handleNumberValidation}
                                 onInput={handleNumberValidation}
                                 required
                                 />
@@ -215,7 +207,6 @@ function AddProduct() {
                                 name="width" 
                                 value={formData.width}
                                 onChange={handleChange}
-                                onInvalid={handleNumberValidation}
                                 onInput={handleNumberValidation}
                                 required
                                 />
@@ -230,7 +221,6 @@ function AddProduct() {
                                 name="length" 
                                 value={formData.length} 
                                 onChange={handleChange} 
-                                onInvalid={handleNumberValidation}
                                 onInput={handleNumberValidation}
                                 required
                                 />
